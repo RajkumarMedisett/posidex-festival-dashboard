@@ -1612,7 +1612,7 @@ def build_page(
 
     updated = (
         pd.Timestamp(ts).strftime(
-            "%d %b %Y %I:%M:%S %p"
+            "%d %b %Y "
         )
         if ts is not None
         else "—"
@@ -1690,19 +1690,19 @@ def build_page(
 
   <div style="
       position:absolute;
-      right:14px;
+      right:200px;
       bottom:9px;
 
       color:
           rgba(255,255,255,.95);
 
-      font-size:{fs(8)}px;
+      font-size:{fs(35)}px;
       font-weight:700;
       white-space:nowrap;
   ">
-      Updated {updated}
-      &nbsp;|&nbsp;
-      Data through Hour {max_latest}
+       {updated}
+      &nbsp;&nbsp;
+      
   </div>
 
 </div>
